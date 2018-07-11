@@ -68,7 +68,7 @@ function drawField()
 function up()
 {
 	var str = document.getElementById("lineEdit0").value;
-	str = div(str, "17");
+	str = div(str, h.toString());
 	str = dec2bin(str);
 	
 	while (str.length < 1802) {
@@ -93,6 +93,6 @@ function down()
 	}
 
 	str = bin2dec(str);
-	str = mp(str, "17");
+	str = mp(str, h.toString());
 	document.getElementById("lineEdit0").value = str;	
 }
